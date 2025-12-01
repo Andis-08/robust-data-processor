@@ -114,6 +114,7 @@ resource "aws_lambda_function" "ingest_lambda" {
   handler          = "ingest.lambda_handler"
   runtime          = "python3.9"
   source_code_hash = data.archive_file.ingest_zip.output_base64sha256
+  timeout          = 900
 
   environment {
     variables = {
