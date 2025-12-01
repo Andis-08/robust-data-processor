@@ -61,7 +61,7 @@ The system uses a **Serverless Event-Driven Architecture**:
     Configure a profile and test connectivity:
     ```
     aws configure --profile evaluator
-    # Enter the keys retrieved above. Region: us-west-1
+    # Enter the keys retrieved above. Region: us-east-1
     
     # Test Read (Should Succeed)
     aws dynamodb scan --table-name MultiTenantLogs --profile evaluator
